@@ -16,7 +16,7 @@ plot3<-function(){
         #open the png device
         png(filename = "plot3.png", width = 480, height = 480)
         #plot the graph
-        plot(x = hpcsub$Time, y = hpcsub$Sub_metering_1, type="l", col = "black", xlab = "", ylab="Energy Sub Metering")
+        plot(x = hpcsub$Time, y = hpcsub$Sub_metering_1, type="l", col = "black", xlab = "", ylab="Energy sub metering")
         lines(x = hpcsub$Time, y = hpcsub$Sub_metering_2, col = "red")
         lines(x = hpcsub$Time, y = hpcsub$Sub_metering_3, col = "blue")
         legend("topright", lty = "solid", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
